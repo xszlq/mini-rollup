@@ -17,6 +17,8 @@
 - 生成代码
   - 加载依赖的模块。基于 ast 分析，递归加载依赖模块，并放到 module.imports[moduleName].module 对象下，这就形成了一种树形结构
   - 生成代码。基于 module.\_dependsOn 对象里用到的模块，加载对应代码（这是**_实现 treeShaking 的核心_**，未使用的代码不会放到 bundle 中）。
+  - 移除额外代码。子模块的 export const 等代码
+  - 重命名。可能会存在模块的命名冲突的情况。
 
 ## 本地调试
 
