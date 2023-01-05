@@ -23,3 +23,8 @@
 - 安装依赖，yarn/ npm 都可以
 - 添加断点，src 中 js 添加断点
 - 运行，用 node 运行 demo 下的 test.js
+
+## 其他
+
+参考：
+https://juejin.cn/post/6898865993289105415#heading-8
